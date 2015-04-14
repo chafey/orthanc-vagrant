@@ -10,11 +10,11 @@ This is a sample **[vagrant](https://www.vagrantup.com/)** project that builds a
 
 - **Ubuntu 14.04** (Trusty) Server
 - Builds Orthanc **0.8.6** (dynamically linked)
+- Builds Orthanc DICOMWeb plugin and loads it (dynamically linked)
 - Sets a fixed host-only IP at **192.168.33.10**
 - Forwards Orthanc ports **4242** (DICOM) and **8042** (HTTP)
 - Sets up the storage directory in a synced folder that maps to 'OrthancStorage' in the project's path
 - Sets up disk compression
-- Builds Orthanc DICOMWeb plugin and loads it
 
 ## Installation
 
@@ -52,8 +52,8 @@ Then you can access DICOMWeb interfaces here:
 
 ## Contributors
 
-Simon Rascovsky
-Chris Hafey
+- Simon Rascovsky
+- Chris Hafey
 
 ## License
 
