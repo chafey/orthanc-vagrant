@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get install -y build-essential unzip cmake mercurial \
   uuid-dev libgtest-dev libpng-dev libsqlite3-dev \
   zlib1g-dev libboost-all-dev libjsoncpp-dev \
-  libgdcm2-dev libpugixml-dev
+  libgdcm2-dev libpugixml-dev libjpeg-dev
 
 rm -rf home/vagrant/orthanc-webviewer
 hg clone https://code.google.com/p/orthanc-webviewer/
