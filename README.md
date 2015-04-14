@@ -46,11 +46,14 @@ Now you should be able to send DICOM files to **192.168.33.10**, port **4242**, 
 
 Then you can access DICOMWeb interfaces here:
 
-http://localhost:8042/qido-rs
-http://localhost:8042/stow-rs
-http://localhost:8042/wado-rs
+- http://localhost:8042/qido-rs
+- http://localhost:8042/stow-rs
+- http://localhost:8042/wado-rs
 
 ## Contributors
+
+Simon Rascovsky
+Chris Hafey
 
 ## License
 
