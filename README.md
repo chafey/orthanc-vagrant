@@ -11,6 +11,7 @@ This is a sample **[vagrant](https://www.vagrantup.com/)** project that builds a
 - **Ubuntu 14.04** (Trusty) Server
 - Builds Orthanc **0.8.6** (dynamically linked)
 - Builds Orthanc DICOMWeb plugin and loads it (dynamically linked)
+- Builds Orthanc WebViewer plugin and loads it (dynamically linked)
 - Sets a fixed host-only IP at **192.168.33.10**
 - Forwards Orthanc ports **4242** (DICOM) and **8042** (HTTP)
 - Sets up the storage directory in a synced folder that maps to 'OrthancStorage' in the project's path
@@ -27,7 +28,8 @@ This is a sample **[vagrant](https://www.vagrantup.com/)** project that builds a
 	- Downloads the Ubuntu server image
 	- Prepares the system
 	- Builds Orthanc
-	- Builds Orthanc DICOM Web Plugin
+	- Builds Orthanc DICOMWeb Plugin
+	- Builds Orthanc WebViewer Plugin
 
 
 ## Running Orthanc
@@ -44,11 +46,13 @@ Once inside the VM, start the Orthanc server with the provided configuration fil
 
 Now you should be able to send DICOM files to **192.168.33.10**, port **4242**, AET: **ORTHANC** and verify using the Orthanc explorer at **http://localhost:8042**
 
-Then you can access DICOMWeb interfaces here:
+You can access DICOMWeb interfaces here:
 
 - http://localhost:8042/qido-rs
 - http://localhost:8042/stow-rs
 - http://localhost:8042/wado-rs
+
+
 
 ## Contributors
 

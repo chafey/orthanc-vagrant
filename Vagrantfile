@@ -69,4 +69,5 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "Configuration.json", destination: "~/Configuration.json"
   config.vm.provision :shell, path: "orthanc.sh"
   config.vm.provision :shell, path: "orthanc-dicomweb.sh"
+  config.vm.provision :shell, path: "orthanc-webviewer.sh"
 end

@@ -39,9 +39,15 @@
   // folders, in which case they will be scanned non-recursively to
   // find shared libraries.
   "Plugins" : [
-    "/home/vagrant/OrthancDICOMWebBuild/libOrthancDicomWeb.so"
+    "/home/vagrant/OrthancDICOMWebBuild/libOrthancDicomWeb.so",
+    "/home/vagrant/OrthancViewerBuild/libOrthancWebViewer.so"
   ],
 
+  "WebViewer" : {
+    "CachePath" : "WebViewerCache",
+    "CacheSize" : 10,
+    "Threads" : 4
+  },
 
   /**
    * Configuration of the HTTP server
