@@ -67,6 +67,6 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
 
   config.vm.provision "file", source: "Configuration.json", destination: "~/Configuration.json"
-  #config.vm.provision :shell, path: "orthanc.sh"
-  #config.vm.provision :shell, path: "orthanc-dicomweb.sh"
+  config.vm.provision :shell, path: "orthanc.sh"
+  config.vm.provision :shell, path: "orthanc-dicomweb.sh"
 end
