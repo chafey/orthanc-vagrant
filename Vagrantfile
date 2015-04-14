@@ -67,26 +67,6 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
 
   config.vm.provision "file", source: "Configuration.json", destination: "~/Configuration.json"
-
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y build-essential unzip cmake mercurial \
-                            uuid-dev libcurl4-openssl-dev liblua5.1-0-dev \
-                            libgoogle-glog-dev libgtest-dev libpng-dev \
-                            libsqlite3-dev libssl-dev zlib1g-dev \
-                            libdcmtk2-dev libboost-all-dev libwrap0-dev libjsoncpp-dev libcharls-dev
-    wget http://downloads.sourceforge.net/project/orthancserver/Orthanc-0.8.6.tar.gz
-    tar -xzf Orthanc-0.8.6.tar.gz
-    rm Orthanc-0.8.6.tar.gz
-    mkdir OrthancBuild
-    cd OrthancBuild
-    cmake "-DDCMTK_LIBRARIES=CharLS;dcmjpls;wrap;oflog" \
-          -DALLOW_DOWNLOADS=ON \
-          -DUSE_SYSTEM_MONGOOSE=OFF \
-          -DUSE_SYSTEM_JSONCPP=OFF \
-          -DUSE_GTEST_DEBIAN_SOURCE_PACKAGE=ON \
-          -DUSE_SYSTEM_PUGIXML=OFF \
-          /home/vagrant/Orthanc-0.8.6
-    make
-  SHELL
+  #config.vm.provision :shell, path: "orthanc.sh"
+  #config.vm.provision :shell, path: "orthanc-dicomweb.sh"
 end
