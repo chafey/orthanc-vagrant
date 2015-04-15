@@ -4,7 +4,8 @@ sudo apt-get install -y build-essential unzip cmake mercurial \
         uuid-dev libcurl4-openssl-dev liblua5.1-0-dev \
         libgoogle-glog-dev libgtest-dev libpng-dev \
         libsqlite3-dev libssl-dev zlib1g-dev \
-        libdcmtk2-dev libboost-all-dev libwrap0-dev libjsoncpp-dev libcharls-dev
+        libdcmtk2-dev libboost-all-dev libwrap0-dev libjsoncpp-dev libcharls-dev \
+        libpugixml-dev
 
 wget http://downloads.sourceforge.net/project/orthancserver/Orthanc-0.8.6.tar.gz
 rm -rf /home/vagrant/Orthanc-0.8.6
