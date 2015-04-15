@@ -9,9 +9,9 @@ This is a sample **[vagrant](https://www.vagrantup.com/)** project that builds a
 ## Features
 
 - **Ubuntu 14.04** (Trusty) Server
-- Builds Orthanc **0.8.6** (dynamically linked)
-- Builds Orthanc DICOMWeb plugin and loads it (dynamically linked)
-- Builds Orthanc WebViewer plugin and loads it (dynamically linked)
+- Builds [Orthanc](http://www.orthanc-server.com/) **0.8.6** (dynamically linked)
+- Builds [Orthanc DICOMWeb](https://bitbucket.org/sjodogne/orthanc-dicomweb/overview) **1.0** plugin and loads it (dynamically linked)
+- Builds [Orthanc WebViewer](https://code.google.com/p/orthanc-webviewer/) **1.0** plugin and loads it (dynamically linked)
 - Sets a fixed host-only IP at **192.168.33.10**
 - Forwards Orthanc ports **4242** (DICOM) and **8042** (HTTP)
 - Sets up the storage directory in a synced folder that maps to 'OrthancStorage' in the project's path
@@ -44,15 +44,15 @@ Once inside the VM, start the Orthanc server with the provided configuration fil
 
 	./OrthancBuild/Orthanc ~/Configuration.json
 
-Now you should be able to send DICOM files to **192.168.33.10**, port **4242**, AET: **ORTHANC** and verify using the Orthanc explorer at **http://localhost:8042**
+Now you should be able to send DICOM files to **192.168.33.10**, port **4242**, AET: **ORTHANC** and verify using the Orthanc explorer at:
+
+http://localhost:8042
 
 You can access DICOMWeb interfaces here:
 
 - http://localhost:8042/qido-rs
 - http://localhost:8042/stow-rs
 - http://localhost:8042/wado-rs
-
-
 
 ## Contributors
 
