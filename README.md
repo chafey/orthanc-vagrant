@@ -44,11 +44,21 @@ Once inside the VM, start the Orthanc server with the provided configuration fil
 
 	./OrthancBuild/Orthanc ~/Configuration.json
 
-Now you should be able to send DICOM files to **192.168.33.10**, port **4242**, AET: **ORTHANC** and verify using the Orthanc explorer at:
+Use a web browser to access verify that Orthanc is running:
 
-http://localhost:8042
+[http://localhost:8042](http://localhost:8042)
 
-You can access DICOMWeb interfaces here:
+You can upload DICOM P10 to Orthanc using the following web interface:
+
+[http://localhost:8042/app/explorer.html#upload](http://localhost:8042/app/explorer.html#upload)
+
+Or you can push DICOM to it:
+
+IP Address: 192.168.33.10
+Port: 4242
+AE Title: ORTHAC
+
+You can access DICOMWeb RESTful interfaces here:
 
 - http://localhost:8042/qido-rs
 - http://localhost:8042/stow-rs
