@@ -54,9 +54,11 @@ You can upload DICOM P10 to Orthanc using the following web interface:
 
 Or you can push DICOM to it:
 
-IP Address: 192.168.33.10
-Port: 4242
-AE Title: ORTHAC
+- IP Address: 192.168.33.10
+- Port: 4242
+- Called AE Title: ORTHAC
+
+* Note that the calling AE title does not matter - Orthanc will accept any
 
 You can access DICOMWeb RESTful interfaces here:
 
