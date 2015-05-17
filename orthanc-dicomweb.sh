@@ -13,6 +13,6 @@ cd /home/vagrant/OrthancDICOMWebBuild
 export CXXFLAGS=-isystem\ /home/vagrant/OrthancBuild/include
 cmake "-DUSE_GTEST_DEBIAN_SOURCE_PACKAGE=ON" \
       -DCMAKE_REQUIRED_INCLUDES= /home/vagrant/OrthancBuild/include \
-      /home/vagrant/OrthancDICOMWeb/sjodogne-orthanc-dicomweb-db07057d77ad
+      /home/vagrant/OrthancDICOMWeb/sjodogne-orthanc-dicomweb-0ed8bbf35577
 make
 cd /home/vagrant
